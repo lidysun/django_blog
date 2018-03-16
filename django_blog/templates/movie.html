@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>豆瓣电影top250</title>
+</head>
+<body>
+	<h3>豆瓣电影top250</h3>
+	<ul>
+		{% for movie in movies %}
+		<li>
+			<a href="">
+				<img src="{{movie.img_url}}" alt="{{movie.name}}">
+			</a>
+			<p><b>{{movie.name}}</b></p>
+			<p style="font-size:12px;color:#999;">{{movie.info}}</p>
+			<p>评分：{{movie.rating}}</p>
+			<p>评价人数：{{movie.num}}</p>
+			<p>名言：{{movie.quote}}</p>
+		</li>
+		{% endfor %}
+	</ul>
+</body>
+</html>
