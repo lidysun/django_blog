@@ -1,2 +1,2 @@
 # test1
-test1_20170218
+利用scrapy爬去的数据进行Django展示
